@@ -21,14 +21,14 @@ A clean, responsive web app to search any GitHub user and instantly view their p
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| UI Library | React 18 |
-| Language | TypeScript 5 |
-| Build Tool | Vite |
-| Styling | CSS (custom, no framework) |
-| Data Source | GitHub REST API v3 |
-| Deployment | Vercel |
+| Layer       | Technology                 |
+| ----------- | -------------------------- |
+| UI Library  | React 18                   |
+| Language    | TypeScript 5               |
+| Build Tool  | Vite                       |
+| Styling     | CSS (custom, no framework) |
+| Data Source | GitHub REST API v3         |
+| Deployment  | Vercel                     |
 
 ---
 
@@ -42,7 +42,7 @@ A clean, responsive web app to search any GitHub user and instantly view their p
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/github-profile-finder.git
+git clone https://github.com/SneRam-0105/github-profile-finder.git
 cd github-profile-finder
 npm install
 ```
@@ -106,9 +106,9 @@ This project was built to practice core React and TypeScript skills:
 
 This app uses the public [GitHub REST API](https://docs.github.com/en/rest) — no authentication required.
 
-| Endpoint | Used for |
-|---|---|
-| `GET /users/{username}` | Fetch user profile |
+| Endpoint                                            | Used for               |
+| --------------------------------------------------- | ---------------------- |
+| `GET /users/{username}`                             | Fetch user profile     |
 | `GET /users/{username}/repos?sort=stars&per_page=6` | Fetch top repositories |
 
 > **Note:** The unauthenticated rate limit is 60 requests/hour per IP. If you hit the limit, wait a minute and try again.
