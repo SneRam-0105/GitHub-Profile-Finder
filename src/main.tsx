@@ -1,0 +1,13 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import './index.css'
+
+// Mount the React app into the <div id="root"> in index.html
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  // StrictMode deliberately double-invokes certain functions in development
+  // to help surface side-effects and other bugs early.
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
